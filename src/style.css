@@ -1,3 +1,37 @@
-* {
-    color: black;
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
+
+#main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 6fr 75px;
+
+}
+
+#content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.workout {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    width: 70vh;
+
+}
+
+#header,
+#footer {
+    background-color: yellow;
+
+}
+
