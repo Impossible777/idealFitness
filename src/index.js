@@ -1,4 +1,12 @@
-import loadPage from "../createWorkoutFunctions";
+import loadHomePage from "../homePage"
 import './style.css'
 
-loadPage();
+loadHomePage();
+
+
+
+
+
+
+
+
