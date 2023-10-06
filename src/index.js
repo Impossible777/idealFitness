@@ -1,4 +1,4 @@
-import loadPage from "../workout";
+import loadPage from "../createWorkoutFunctions";
 import './style.css'
 
 loadPage();

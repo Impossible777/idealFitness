@@ -23,7 +23,7 @@ body {
 
 .workout {
     display: grid;
-    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 1fr;
     width: 70vh;
 

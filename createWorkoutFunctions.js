@@ -61,12 +61,52 @@ editableText.contentEditable = false;
 })
 });
 
+var editWeightValue = document.querySelectorAll('.WeightValue');
+editWeightValue.forEach(function(editableText){
+
+
+editableText.addEventListener("click", function() {
+editableText.contentEditable = true;
+editableText.focus();
+
+editableText.addEventListener("blur", function(){
+editableText.contentEditable = false;
+})
+
+})
+});
+
+
 var elementsWithClassEditableText = document.getElementsByClassName('editableText');
 elementsWithClassEditableText[0].textContent = '3-5';
 elementsWithClassEditableText[1].textContent = '4-6';
 elementsWithClassEditableText[2].textContent = '6-8';
 elementsWithClassEditableText[3].textContent = '4-6';
 elementsWithClassEditableText[4].textContent = '6-8';
+var elementsWithClassRPEValue = document.getElementsByClassName('RPEValue');
+elementsWithClassRPEValue[0].textContent = '8-9';
+elementsWithClassRPEValue[1].textContent = '10';
+elementsWithClassRPEValue[2].textContent = '10';
+elementsWithClassRPEValue[3].textContent = '10';
+elementsWithClassRPEValue[4].textContent = '10';
+var elementsWithClassWeightValue = document.getElementsByClassName('WeightValue');
+elementsWithClassWeightValue[0].textContent = 'lbs';
+elementsWithClassWeightValue[1].textContent = 'lbs';
+elementsWithClassWeightValue[2].textContent = 'lbs';
+elementsWithClassWeightValue[3].textContent = 'lbs';
+elementsWithClassWeightValue[4].textContent = 'lbs';
+var elementsWithClassSetValue = document.getElementsByClassName('setValue');
+elementsWithClassSetValue[0].textContent = '1';
+elementsWithClassSetValue[1].textContent = '2';
+elementsWithClassSetValue[2].textContent = '2';
+elementsWithClassSetValue[3].textContent = '2';
+elementsWithClassSetValue[4].textContent = '2';
+
+
+
+
+
+
 
 
 
@@ -79,14 +119,26 @@ function addExerciseDetails(workout) {
     numberOfSetsElement.textContent = 'Sets';
     const RPEElement = document.createElement('div');
     RPEElement.classList.add('RPE');
-    RPEElement.textContent = 'RPE';
+    RPEElement.textContent = 'RPE';    
+    const RPEValue = document.createElement('div');
+    RPEValue.classList.add('RPEValue');
+    RPEElement.appendChild(RPEValue);
+    const weightElement = document.createElement('div')
+    weightElement.classList.add('weight');
+    weightElement.textContent = 'Weight';
+    const WeightValue = document.createElement('div');
+    WeightValue.classList.add('WeightValue');
+    weightElement.appendChild(WeightValue);
+    const setValue = document.createElement('div');
+    setValue.classList.add('setValue');
+    numberOfSetsElement.appendChild(setValue);
+
     const REPElement = document.createElement('div');
     REPElement.classList.add('REP');
-    REPElement.textContent = 'REP';
+    REPElement.textContent = 'Reps';
     const editableTextDiv = document.createElement('div');
     editableTextDiv.classList = 'editableText';
     editableTextDiv.contentEditable = 'true';
-    editableTextDiv.textContent = "REPS";
     REPElement.appendChild(editableTextDiv);
 
 
@@ -97,6 +149,7 @@ function addExerciseDetails(workout) {
     workout.appendChild(numberOfSetsElement);
     workout.appendChild(RPEElement);
     workout.appendChild(REPElement);
+    workout.appendChild(weightElement);
 
 
 
