@@ -21,6 +21,16 @@ body {
     align-items: center;
 }
 
+.homeWelcomeContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    width: 100vh;
+    height: 70vh;
+    align-items: center;
+
+}
+
 .workout {
     display: grid;
     grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
@@ -38,5 +48,28 @@ body {
 button {
     width: 100px;
     height: 40px;
+    grid-row: 3/4;
+    justify-content: center;
 }
+
+.homeWelcome {
+    font-size: 60px;
+    justify-self: center;
+    grid-column: 1/4;
+}
+
+.userSelection {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    font-size: 30px;
+    justify-self: center;
+
+}
+.Michael,
+.Becca,
+.Chris {
+    justify-self: center;
+}
+
+
 
