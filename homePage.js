@@ -1,5 +1,6 @@
 import loadPage from "./createWorkoutFunctions";
 
+
 function loadHomePage() {
 
 const content = document.querySelector('#content');
@@ -65,6 +66,10 @@ chrisButton.addEventListener('click', () => {
     chrisButton.remove();
 });
 
+
+test();
+const currentOrigin = window.location.origin;
+console.log(currentOrigin);
 
 
 
