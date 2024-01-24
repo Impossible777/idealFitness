@@ -67,9 +67,6 @@ chrisButton.addEventListener('click', () => {
 });
 
 
-test();
-const currentOrigin = window.location.origin;
-console.log(currentOrigin);
 
 
 

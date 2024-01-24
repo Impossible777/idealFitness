@@ -1,7 +1,19 @@
-import loadHomePage from "../homePage"
-import './style.css'
+import './style.css';
+import loadHomePage from '../homePage.js';
 
 loadHomePage();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
